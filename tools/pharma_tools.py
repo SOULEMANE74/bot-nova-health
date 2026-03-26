@@ -94,15 +94,21 @@ def get_nearly(user_lat, user_lon, fichier_json=CACHE_FILE_PATH):
             else:
                 phar['distance_reelle'] = float('inf') # Trop loin si pas de GPS
 
-        top_3 = sorted(pharmacies, key=lambda x: x['distance_reelle'])[:3]
+        top_5 = sorted(pharmacies, key=lambda x: x['distance_reelle'])[:5]
 
-        response_txt = ""
-        for p in top_3:
-             response_txt += f"\n - {p['nom']} \n {p['quartier']} \n {p['adresse']} \n {p['contacts']} \n {p['distance_reelle']} Km \n {p['map_link']} \n"
-        return response_txt
+        resultats_json = []
+        for p in top_5:
+            resultats_json.append({
+                "name": p.get('nom', 'N/A'),
+                "address": f"{p.get('quartier', '')} - {p.get('adresse', '')}",
+                "phone": p.get('contacts', 'N/A'),
+                "distance": p['distance_reelle'],
+                "map_link": p.get('map_link', '')
+            })
+        return resultats_json
     
     except FileNotFoundError:
-            return "[ERROR] : JSON files does not exist"
+        return {"error": "Le fichier JSON des pharmacies est introuvable."}
     except Exception as e:
-            return f"[ERROR] : {e}"
+        return {"error": str(e)}
 

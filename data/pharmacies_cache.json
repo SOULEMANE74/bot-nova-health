@@ -1,380 +1,407 @@
 [
     {
-        "nom": "PHARMACIE MAWUNYO",
-        "quartier": "Agoè Sogbossito",
-        "contacts": "98 23 38 30",
-        "latitude": "6.254869000336117",
-        "longitude": "1.1712071560981412",
-        "map_link": "https://maps.google.com/?q=6.254869000336117,1.1712071560981412",
-        "adresse": "Route de Mission Tové, Non loin de la Station OANDO Agoè Sogbossito"
+        "nom": "PHARMACIE LA NOUVELLE TULIPE",
+        "quartier": "LOME",
+        "contacts": "99 47 00 70",
+        "latitude": "6.2608333",
+        "longitude": "1.16075",
+        "map_link": "https://maps.google.com/?q=6.2608333,1.16075",
+        "adresse": "Rte de Mission-Tové, près de la Station CAP Agoè-légbassito"
     },
     {
-        "nom": "PHARMACIE DENIS",
+        "nom": "PHARMACIE LA BARAKA",
         "quartier": "AGOE",
-        "contacts": "93 08 46 40 / 70 12 35 85",
-        "latitude": "6.2477146",
-        "longitude": "1.1529594",
-        "map_link": "https://maps.google.com/?q=6.2477146,1.1529594",
-        "adresse": "Agoè Kové, Carrefour KPOGLI"
+        "contacts": "90 17 49 28 / 70 41 44 13",
+        "latitude": "6.2421387",
+        "longitude": "1.1664511",
+        "map_link": "https://maps.google.com/?q=6.2421387,1.1664511",
+        "adresse": "Agoe Logopé, non loin de l'Ecoke la BRUYERE à proximité du camp GP"
     },
     {
-        "nom": "PHARMACIE ABRAHAM",
+        "nom": "PHARMACIE DIVINA GRACIA",
+        "quartier": "AGOE",
+        "contacts": "93 83 91 00 / 96 80 10 21",
+        "latitude": "6.2327797",
+        "longitude": "1.1868497",
+        "map_link": "https://maps.google.com/?q=6.2327797,1.1868497",
+        "adresse": "Agoè fiovi, rond point Cool Catche"
+    },
+    {
+        "nom": "PHARMACIE TCHEP'SON",
+        "quartier": "AGOE",
+        "contacts": "96 90 04 64 / 70 42 94 41",
+        "latitude": "6.2590019",
+        "longitude": "1.1991617",
+        "map_link": "https://maps.google.com/?q=6.2590019,1.1991617",
+        "adresse": "Face terminal du Sahel, Agoè zongo"
+    },
+    {
+        "nom": "PHARMACIE GRATITUDE",
+        "quartier": "Agoè Légbassito",
+        "contacts": "92 18 94 85",
+        "latitude": "6.2646808",
+        "longitude": "1.133599",
+        "map_link": "https://maps.google.com/?q=6.2646808,1.133599",
+        "adresse": "Grand contournement non loin du carrefour avinato à 100m de la clinique OASIS "
+    },
+    {
+        "nom": "PHARMACIE LA MAIN DE DIEU",
+        "quartier": "AGOE",
+        "contacts": "22 52 77 55",
+        "latitude": "6.2349799",
+        "longitude": "1.2003657",
+        "map_link": "https://maps.google.com/?q=6.2349799,1.2003657",
+        "adresse": "Agoè nouveau marché, vers le camp de police"
+    },
+    {
+        "nom": "PHARMACIE YESHUA",
+        "quartier": "Agoè-Nyivé",
+        "contacts": "98772153 / 98772150",
+        "latitude": "6.2197903",
+        "longitude": "1.1567935",
+        "map_link": "https://maps.google.com/?q=6.2197903,1.1567935",
+        "adresse": "Agoè - Vakpossito vers l'école NDE, entre le CMS Mur et le CMS Maranatha"
+    },
+    {
+        "nom": "PHARMACIE ZOSSIME",
+        "quartier": "AGOE",
+        "contacts": "99 99 80 75 / 70 46 26 64",
+        "latitude": "6.2333748",
+        "longitude": "1.1391774",
+        "map_link": "https://maps.google.com/?q=6.2333748,1.1391774",
+        "adresse": "Zossimé, route de Sanguéra près du marché de Zossimé"
+    },
+    {
+        "nom": "PHARMACIE LE ROCHER",
+        "quartier": "AGOE",
+        "contacts": "92 30 06 56 / 99 08 05 01",
+        "latitude": "6.2461716",
+        "longitude": "1.2071869",
+        "map_link": "https://maps.google.com/?q=6.2461716,1.2071869",
+        "adresse": "Agoè Zongo, sur la nationale N°1, près du terrain de jeu de Golf"
+    },
+    {
+        "nom": "PHARMACIE CLEMENCE",
+        "quartier": "AGOE",
+        "contacts": "70 19 35 35 / 70 21 26 26",
+        "latitude": "6.2199286",
+        "longitude": "1.1895335",
+        "map_link": "https://maps.google.com/?q=6.2199286,1.1895335",
+        "adresse": "Route de la Cour d'appel, entre la CEET et l'Ecole privée LA SOURCE"
+    },
+    {
+        "nom": "PHARMACIE DIEUDONNE",
+        "quartier": "AGOE NYIVE",
+        "contacts": "23 38 07 44",
+        "latitude": "6.2157404",
+        "longitude": "1.1374364",
+        "map_link": "https://maps.google.com/?q=6.2157404,1.1374364",
+        "adresse": "Route LEO 2000, non loin de FUCEC, Agoè-Téléssou, BP 7951"
+    },
+    {
+        "nom": "PHARMACIE MILLENAIRE",
+        "quartier": "LOME",
+        "contacts": "22 51 64 31",
+        "latitude": "6.206914",
+        "longitude": "1.1873226",
+        "map_link": "https://maps.google.com/?q=6.206914,1.1873226",
+        "adresse": "Adidoadin, 05 BP 64"
+    },
+    {
+        "nom": "PHARMACIE APOLLON",
+        "quartier": "LOME",
+        "contacts": "22 31 01 07",
+        "latitude": "6.202853",
+        "longitude": "1.1644948",
+        "map_link": "https://maps.google.com/?q=6.202853,1.1644948",
+        "adresse": "Hétsiavi, avédji, 08 BP 80507"
+    },
+    {
+        "nom": "PHARMACIE EVA",
+        "quartier": "AGOE",
+        "contacts": "92163232",
+        "latitude": "6.24591",
+        "longitude": "1.1150278",
+        "map_link": "https://maps.google.com/?q=6.24591,1.1150278",
+        "adresse": "Sanguéra, non loin de T'OIL"
+    },
+    {
+        "nom": "PHARMACIE OSSAN",
+        "quartier": "LOME",
+        "contacts": "23 38 44 25 / 22 51 13 04",
+        "latitude": "6.201132",
+        "longitude": "1.1785749",
+        "map_link": "https://maps.google.com/?q=6.201132,1.1785749",
+        "adresse": "Carrefour d’Avédji, BP 869"
+    },
+    {
+        "nom": "PHARMACIE SAINT MICHEL",
+        "quartier": "AGOE NYIVE",
+        "contacts": "22 51 70 22",
+        "latitude": "6.2152161",
+        "longitude": "1.2062228",
+        "map_link": "https://maps.google.com/?q=6.2152161,1.2062228",
+        "adresse": "Près de la Brasserie BB, 05 BP 201"
+    },
+    {
+        "nom": "PHARMACIE SILOE",
+        "quartier": "LOME",
+        "contacts": "22 33 82 87",
+        "latitude": "6.2068567",
+        "longitude": "1.1387278",
+        "map_link": "https://maps.google.com/?q=6.2068567,1.1387278",
+        "adresse": "Carrefour Atigangomé, Adidogomé A pédokoe,  07 BP  7189"
+    },
+    {
+        "nom": "PHARMACIE SAINT ESPRIT",
+        "quartier": "AGOE NYIVE",
+        "contacts": "22 40 29 06",
+        "latitude": "6.2218567",
+        "longitude": "1.219288",
+        "map_link": "https://maps.google.com/?q=6.2218567,1.219288",
+        "adresse": "Route Agoè-Kégué, CEG Agoè Est, BP 1246"
+    },
+    {
+        "nom": "PHARMACIE ACTUELLE",
+        "quartier": "LOME",
+        "contacts": "22 51 11 72 / 22 50 63 30",
+        "latitude": "6.1926065",
+        "longitude": "1.1418284",
+        "map_link": "https://maps.google.com/?q=6.1926065,1.1418284",
+        "adresse": "Route ségbé, sagbado, BP 3622"
+    },
+    {
+        "nom": "PHARMACIE VIGUEUR",
+        "quartier": "LOME",
+        "contacts": "22 51 63 30 / 90 03 29 71",
+        "latitude": "6.1925619",
+        "longitude": "1.1986329",
+        "map_link": "https://maps.google.com/?q=6.1925619,1.1986329",
+        "adresse": "267, rue Agbalépédo, 05 BP 02"
+    },
+    {
+        "nom": "PHARMACIE ADIDOGOME",
+        "quartier": "LOME",
+        "contacts": "22 25 54 85 / 22 50 54 85",
+        "latitude": "6.1850613",
+        "longitude": "1.1640512",
+        "map_link": "https://maps.google.com/?q=6.1850613,1.1640512",
+        "adresse": "Avenue du 30 Août, adidogomé, 04 BP 224 Lomé 04"
+    },
+    {
+        "nom": "PHARMACIE ASSURANCE",
+        "quartier": "AGOE",
+        "contacts": "93 08 76 76 / 96 82 76 76",
+        "latitude": "6.3208762",
+        "longitude": "1.2088685",
+        "map_link": "https://maps.google.com/?q=6.3208762,1.2088685",
+        "adresse": "Adétikopé, Nationale N° 1, non loin du marché"
+    },
+    {
+        "nom": "PHARMACIE DJIDJOLE",
+        "quartier": "LOME",
+        "contacts": "22 25 65 12 / 23 20 95 55",
+        "latitude": "6.1804899",
+        "longitude": "1.1930898",
+        "map_link": "https://maps.google.com/?q=6.1804899,1.1930898",
+        "adresse": "93 rue Pya BP 8539"
+    },
+    {
+        "nom": "PHARMACIE DE L'AEROPORT",
+        "quartier": "LOME",
+        "contacts": "22 26 21 22",
+        "latitude": "6.18244",
+        "longitude": "1.2055796",
+        "map_link": "https://maps.google.com/?q=6.18244,1.2055796",
+        "adresse": "631, bd ; du haho, imm ; SITO, hédzranawoé, BP 3717"
+    },
+    {
+        "nom": "PHARMACIE UNIVERS SANTE",
         "quartier": "LOMÉ",
-        "contacts": "22 50 10 00 / 92 25 99 83",
-        "latitude": "6.2358092",
-        "longitude": "1.1667484",
-        "map_link": "https://maps.google.com/?q=6.2358092,1.1667484",
-        "adresse": "Agoè Lohopé Kossigan"
+        "contacts": "22 61 81 43 / 93 88 83 31",
+        "latitude": "6.1827033",
+        "longitude": "1.2124053",
+        "map_link": "https://maps.google.com/?q=6.1827033,1.2124053",
+        "adresse": "Bd. GNASSIMGBE Eyadéma, Cité OUA face a l'entrée du CHU-CAMPUS"
     },
     {
-        "nom": "PHARMACIE M'BA",
+        "nom": "PHARMACIE SAINT JOSEPH",
+        "quartier": "LOME",
+        "contacts": "22 25 74 65",
+        "latitude": "6.1772853",
+        "longitude": "1.2029426",
+        "map_link": "https://maps.google.com/?q=6.1772853,1.2029426",
+        "adresse": "Rue Bretelle, Avenue de la RP, Bè Klikamé, BP 13000"
+    },
+    {
+        "nom": "PHARMACIE DES LILAS",
+        "quartier": "LOME",
+        "contacts": "22 42 29 16",
+        "latitude": "6.1830855",
+        "longitude": "1.2332334",
+        "map_link": "https://maps.google.com/?q=6.1830855,1.2332334",
+        "adresse": "7 rue de kégué, en face du camp, BP 31000"
+    },
+    {
+        "nom": "PHARMACIE INTERNATIONALE",
+        "quartier": "LOME",
+        "contacts": "22 26 89 94 / 99 90 89 66",
+        "latitude": "6.1832166",
+        "longitude": "1.2389391",
+        "map_link": "https://maps.google.com/?q=6.1832166,1.2389391",
+        "adresse": "1180, boulevard du Haho, Angle Nord, Assi yéyé Hédzranawoé, BP 1344"
+    },
+    {
+        "nom": "PHARMACIE DU CAMPUS",
+        "quartier": "LOME",
+        "contacts": "22 21 56 32",
+        "latitude": "6.1629236",
+        "longitude": "1.2111689",
+        "map_link": "https://maps.google.com/?q=6.1629236,1.2111689",
+        "adresse": "Bd. De la Kara, adéwui, BP 20217"
+    },
+    {
+        "nom": "PHARMACIE DE LA LIBERATION",
+        "quartier": "LOME",
+        "contacts": "22 22 25 25",
+        "latitude": "6.1533788",
+        "longitude": "1.2173758",
+        "map_link": "https://maps.google.com/?q=6.1533788,1.2173758",
+        "adresse": "199 avenue de la libération, tokoin trésor, BP 12045"
+    },
+    {
+        "nom": "PHARMACIE PROVIDENCE",
+        "quartier": "LOMÉ",
+        "contacts": "22 26 66 48",
+        "latitude": "6.1606858",
+        "longitude": "1.2316459",
+        "map_link": "https://maps.google.com/?q=6.1606858,1.2316459",
+        "adresse": "Boulevard Jean-Paul II"
+    },
+    {
+        "nom": "PHARMACIE SOURCE DE VIE",
+        "quartier": "LOME",
+        "contacts": "22 22 45 71",
+        "latitude": "6.1471155",
+        "longitude": "1.2012943",
+        "map_link": "https://maps.google.com/?q=6.1471155,1.2012943",
+        "adresse": "Bd.  De la victoire, Face Collège protestant,  BP 147"
+    },
+    {
+        "nom": "PHARMACIE SAINTE RITA",
+        "quartier": "LOME",
+        "contacts": "22 20 90 16",
+        "latitude": "6.1383352",
+        "longitude": "1.2281291",
+        "map_link": "https://maps.google.com/?q=6.1383352,1.2281291",
+        "adresse": "Rue  de France, face Hôtel Sana, Doulassamé, BP 10046"
+    },
+    {
+        "nom": "PHARMACIE DE L’UNION",
+        "quartier": "LOME",
+        "contacts": "22 27 71 64",
+        "latitude": "6.1602452",
+        "longitude": "1.2610987",
+        "map_link": "https://maps.google.com/?q=6.1602452,1.2610987",
+        "adresse": "Bd ; mafakassa Bè KPOTA BP 2735"
+    },
+    {
+        "nom": "PHARMACIE DES ETOILES",
+        "quartier": "LOME",
+        "contacts": "22 22 45 04",
+        "latitude": "6.1320067",
+        "longitude": "1.2182941",
+        "map_link": "https://maps.google.com/?q=6.1320067,1.2182941",
+        "adresse": "10, avenue de la nouvelle marché, BP 3484"
+    },
+    {
+        "nom": "PHARMACIE HORIZON",
+        "quartier": "LOME",
+        "contacts": "90 56 52 56 / 22 20 42 42",
+        "latitude": "6.1289741",
+        "longitude": "1.210742",
+        "map_link": "https://maps.google.com/?q=6.1289741,1.210742",
+        "adresse": "95, boulevard du 13 Janvier, Nyekonakpoè, 08 BP 81726"
+    },
+    {
+        "nom": "PHARMACIE AMESSIAME",
+        "quartier": "LOME",
+        "contacts": "22 21 49 74 / 22 40 66 69",
+        "latitude": "6.1361035",
+        "longitude": "1.2320088",
+        "map_link": "https://maps.google.com/?q=6.1361035,1.2320088",
+        "adresse": "Bd. F H Boigny près du marché de Bè, BP 61720"
+    },
+    {
+        "nom": "PHARMACIE SANTE",
+        "quartier": "LOME",
+        "contacts": "22 21 58 41",
+        "latitude": "6.1308958",
+        "longitude": "1.2251543",
+        "map_link": "https://maps.google.com/?q=6.1308958,1.2251543",
+        "adresse": "674, rue du chemin de fer, 01 BP 1236"
+    },
+    {
+        "nom": "PHARMACIE DE SEGBE",
+        "quartier": "LOME",
+        "contacts": "90 59 49 35 / 79 30 07 29",
+        "latitude": "6.1939325",
+        "longitude": "1.0440659",
+        "map_link": "https://maps.google.com/?q=6.1939325,1.0440659",
+        "adresse": "Ségbé, quartier Zanvi,, près de l'EPP et du CEG Ségbé"
+    },
+    {
+        "nom": "PHARMACIE ECLAIR",
+        "quartier": "LOME",
+        "contacts": "22 22 75 11",
+        "latitude": "6.1425481",
+        "longitude": "1.2548651",
+        "map_link": "https://maps.google.com/?q=6.1425481,1.2548651",
+        "adresse": "Rue avénou, bè ahligo, BP 81297"
+    },
+    {
+        "nom": "PHARMACIE LE PROGRES",
+        "quartier": "LOME",
+        "contacts": "22 35 86 55 / 22 27 14 63",
+        "latitude": "6.166686",
+        "longitude": "1.2810575",
+        "map_link": "https://maps.google.com/?q=6.166686,1.2810575",
+        "adresse": "Akodésséwa Kponou (Zorro-bar), 06 BP 60986"
+    },
+    {
+        "nom": "PHARMACIE SAINT PHILIPPE",
         "quartier": "AGOE",
-        "contacts": "70 27 81 81 / 99 76 81 81",
-        "latitude": "6.2716598",
-        "longitude": "1.1464673",
-        "map_link": "https://maps.google.com/?q=6.2716598,1.1464673",
-        "adresse": "13 BP 341 Lomé. Route de Kovié, 500 mètres après le marché de LEGBASSITO. "
+        "contacts": "90 67 33 24 / 99 99 80 04",
+        "latitude": "6.2280254",
+        "longitude": "1.0259728",
+        "map_link": "https://maps.google.com/?q=6.2280254,1.0259728",
+        "adresse": "Zanguéra, Route Lomé-Kpalimé, près de la station de service OANDO"
     },
     {
-        "nom": "PHARMACIE EMMAUS",
-        "quartier": "AGOE NYIVE",
-        "contacts": "22 51 29 19 / 22 40 25 04",
-        "latitude": "6.2359286",
-        "longitude": "1.1918434",
-        "map_link": "https://maps.google.com/?q=6.2359286,1.1918434",
-        "adresse": "Route de Mission-Tové, Agoè-Nyivé BP 20492"
-    },
-    {
-        "nom": "PHARMACIE VITA FLORE",
+        "nom": "PHARMACIE DE L'EDEN",
         "quartier": "LOME",
-        "contacts": "22 27 06 36",
-        "latitude": "6.2219499",
-        "longitude": "1.163045",
-        "map_link": "https://maps.google.com/?q=6.2219499,1.163045",
-        "adresse": "Baguida, BP 80531"
+        "contacts": "70 42 13 98",
+        "latitude": "6.1611581",
+        "longitude": "1.306967",
+        "map_link": "https://maps.google.com/?q=6.1611581,1.306967",
+        "adresse": "Route d'Anèo, face à la cité Baguida"
     },
     {
-        "nom": "PHARMACIE DE LA CHARITE",
-        "quartier": "AGOE NYIVE",
-        "contacts": "22 25 12 60",
-        "latitude": "6.2638511",
-        "longitude": "1.1337231",
-        "map_link": "https://maps.google.com/?q=6.2638511,1.1337231",
-        "adresse": "Non loin de CEG agoè nyivé centre, BP 7856"
-    },
-    {
-        "nom": "PHARMACIE TAKOE",
-        "quartier": "AGOE ZONGO",
-        "contacts": "22 35 27 12 / 90 02 34 59",
-        "latitude": "6.253209",
-        "longitude": "1.2063726",
-        "map_link": "https://maps.google.com/?q=6.253209,1.2063726",
-        "adresse": "Rte d’Atakpamé, Face Terminal Sahel, Togblekopé, BP 8408"
-    },
-    {
-        "nom": "PHARMACIE NABINE",
-        "quartier": "AGOE",
-        "contacts": "93 36 26 26 / 98 97 97 96",
-        "latitude": "6.2180871",
-        "longitude": "1.1825304",
-        "map_link": "https://maps.google.com/?q=6.2180871,1.1825304",
-        "adresse": "Site à Agoè Anomé, dit plateau (Route Bar le Plateau)"
-    },
-    {
-        "nom": "PHARMACIE ADOUNI",
-        "quartier": "AGOE",
-        "contacts": "70 39 39 39",
-        "latitude": "6.218597315389508",
-        "longitude": "1.1489563691587497",
-        "map_link": "https://maps.google.com/?q=6.218597315389508,1.1489563691587497",
-        "adresse": "Vakposito logogome, carrefour AISED"
-    },
-    {
-        "nom": "PHARMACIE GANFAT",
-        "quartier": "AGOE",
-        "contacts": "22 55 08 15 / 70 22 15 15",
-        "latitude": "6.2372998",
-        "longitude": "1.1277133",
-        "map_link": "https://maps.google.com/?q=6.2372998,1.1277133",
-        "adresse": "Agoè Daliko près du Carf EDEM (Camp GP)"
-    },
-    {
-        "nom": "PHARMACIE LAUS DEO",
-        "quartier": "LOME",
-        "contacts": "22 25 15 05 / 22 31 54 52",
-        "latitude": "6.2069734",
-        "longitude": "1.1808951",
-        "map_link": "https://maps.google.com/?q=6.2069734,1.1808951",
-        "adresse": "Route de Léo 2000, face clinique Bethesda, Adidoadin, 05 BP 21"
-    },
-    {
-        "nom": "PHARMACIE DELALI",
-        "quartier": "AGOE NYIVE",
-        "contacts": "22 25 83 31 / 23 36 42 51",
-        "latitude": "6.2079146",
-        "longitude": "1.1930054",
-        "map_link": "https://maps.google.com/?q=6.2079146,1.1930054",
-        "adresse": "Face CMS de cacaveli,   04  BP 225"
-    },
-    {
-        "nom": "PHARMACIE EL-SALI",
-        "quartier": "LOME",
-        "contacts": "70 12 44 44",
-        "latitude": "6.2201679",
-        "longitude": "1.1231497",
-        "map_link": "https://maps.google.com/?q=6.2201679,1.1231497",
-        "adresse": "Rte Lomé-Kpalimé, Aflao Apédokoè Gbomamé, à 50 m de la quaincaillerue MACO"
-    },
-    {
-        "nom": "PHARMACIE BESDA",
-        "quartier": "",
-        "contacts": "23 37 10 56",
-        "latitude": "6.1946918",
-        "longitude": "1.1537811",
-        "map_link": "https://maps.google.com/?q=6.1946918,1.1537811",
-        "adresse": "2, rue Batoumé, Bawakondji, Assahoun, BP 70"
-    },
-    {
-        "nom": "PHARMACIE MAINA",
-        "quartier": "AGOE NYIVE",
-        "contacts": "22 33 65 34",
-        "latitude": "6.1920183",
-        "longitude": "1.1751296",
-        "map_link": "https://maps.google.com/?q=6.1920183,1.1751296",
-        "adresse": "Marché Agoè-Assiyéyé"
-    },
-    {
-        "nom": "PHARMACIE NATION",
-        "quartier": "LOME",
-        "contacts": "22 25 99 65",
-        "latitude": "6.1922419",
-        "longitude": "1.1888177",
-        "map_link": "https://maps.google.com/?q=6.1922419,1.1888177",
-        "adresse": "Totsi en face de l'agence ECOBANK"
-    },
-    {
-        "nom": "PHARMACIE CONSEIL",
-        "quartier": "LOME",
-        "contacts": "93 10 92 92 / 96 80 21 37",
-        "latitude": "6.1937183",
-        "longitude": "1.1280846",
-        "map_link": "https://maps.google.com/?q=6.1937183,1.1280846",
-        "adresse": "Carrefour du CEG Sagbado Logoté"
-    },
-    {
-        "nom": "PHARMACIE EPIPHANIA",
-        "quartier": "LOME",
-        "contacts": "22 25 02 62 / 23 20 10 52",
-        "latitude": "6.1805102",
-        "longitude": "1.1612939",
-        "map_link": "https://maps.google.com/?q=6.1805102,1.1612939",
-        "adresse": "Rue Lapampa, carrefour Agbénadon, Adidogomé,  04 BP 30446"
-    },
-    {
-        "nom": "PHARMACIE DU POINT E",
-        "quartier": "LOME",
-        "contacts": "22 51 91 71",
-        "latitude": "6.1813289",
-        "longitude": "1.1904931",
-        "map_link": "https://maps.google.com/?q=6.1813289,1.1904931",
-        "adresse": "506, rue 129, Aflao Gakli, djidjolé, 08 BP  8589"
-    },
-    {
-        "nom": "PHARMACIE VERTE",
-        "quartier": "LOME",
-        "contacts": "22 25 03 26 / 23 35 26 26",
-        "latitude": "6.1859618",
-        "longitude": "1.2047908",
-        "map_link": "https://maps.google.com/?q=6.1859618,1.2047908",
-        "adresse": "Avenue du RPT Bè Klikamé, BP 81297"
-    },
-    {
-        "nom": "PHARMACIE SANTA MADONA",
-        "quartier": "LOME",
-        "contacts": "70 01 03 03 / 96 68 03 03",
-        "latitude": "6.2139633",
-        "longitude": "1.2376909",
-        "map_link": "https://maps.google.com/?q=6.2139633,1.2376909",
-        "adresse": "Kégué, face Kader COUGBADJA et l'Eglise catholique Ste Thèrese"
-    },
-    {
-        "nom": "PHARMACIE NOTRE DAME DE LA TRINITE",
-        "quartier": "LOME",
-        "contacts": "22 21 27 80",
-        "latitude": "6.1749711",
-        "longitude": "1.1869585",
-        "map_link": "https://maps.google.com/?q=6.1749711,1.1869585",
-        "adresse": "30, Bd. De la paix, super Taco, BP 60154"
-    },
-    {
-        "nom": "PHARMACIE AMEN",
-        "quartier": "AGOE",
-        "contacts": "90 88 55 88 / 97 18 02 02",
-        "latitude": "6.3202621",
-        "longitude": "1.2234323",
-        "map_link": "https://maps.google.com/?q=6.3202621,1.2234323",
-        "adresse": "Marché Adétikopé, près de l'Eglise Catholique Christ-Roi"
-    },
-    {
-        "nom": "PHARMACIE DE LA CITE",
-        "quartier": "LOME",
-        "contacts": "22 25 01 25 / 22 37 01  07",
-        "latitude": "6.1711653",
-        "longitude": "1.1878512",
-        "map_link": "https://maps.google.com/?q=6.1711653,1.1878512",
-        "adresse": "Bd ; du 30 Août cité n’danida  BP 8461"
-    },
-    {
-        "nom": "PHARMACIE GBOSSIME",
-        "quartier": "LOME",
-        "contacts": "22 22 50 50",
-        "latitude": "6.1623605",
-        "longitude": "1.2100301",
-        "map_link": "https://maps.google.com/?q=6.1623605,1.2100301",
-        "adresse": "405, Bd. De la Kara, Gbossime, BP 80859"
-    },
-    {
-        "nom": "PHARMACIE RAOUDHA",
-        "quartier": "LOME",
-        "contacts": "22 61 39 39 / 22 35 70 00",
-        "latitude": "6.1946095",
-        "longitude": "1.2516629",
-        "map_link": "https://maps.google.com/?q=6.1946095,1.2516629",
-        "adresse": "4495, Bd. Du Zio, Hédzranawoé, 3 BP 30153"
-    },
-    {
-        "nom": "PHARMACIE FOREVER",
-        "quartier": "LOME",
-        "contacts": "22 26 11 77 / 22 42 42 22",
-        "latitude": "6.1596623",
-        "longitude": "1.2242197",
-        "map_link": "https://maps.google.com/?q=6.1596623,1.2242197",
-        "adresse": "142, avenue  des kondona, forever, BP 4884"
-    },
-    {
-        "nom": "PHARMACIE LUMEN",
-        "quartier": "LOME",
-        "contacts": "23 38 68 36",
-        "latitude": "6.2513181",
-        "longitude": "1.2794971",
-        "map_link": "https://maps.google.com/?q=6.2513181,1.2794971",
-        "adresse": "Avenue de la victoire, tokoin Casablanca, 01 BP 29"
-    },
-    {
-        "nom": "PHARMACIE DE L’ESPERANCE",
-        "quartier": "LOME",
-        "contacts": "22 21 01 28",
-        "latitude": "6.1539595",
-        "longitude": "1.2208199",
-        "map_link": "https://maps.google.com/?q=6.1539595,1.2208199",
-        "adresse": "Rue de l’ogou, en face du lycée française nyikonakpo, BP 719"
-    },
-    {
-        "nom": "PHARMACIE ROBERTSON",
-        "quartier": "LOME",
-        "contacts": "22 22 28 41 / 23 20 61 11",
-        "latitude": "6.1353768",
-        "longitude": "1.2089434",
-        "map_link": "https://maps.google.com/?q=6.1353768,1.2089434",
-        "adresse": "31 avenue François Mittérand, nyékonakpoè, BP 81670"
-    },
-    {
-        "nom": "PHARMACIE LA MISERICORDE",
-        "quartier": "LOME",
-        "contacts": "23 38 47 62 / 22 27 17 73",
-        "latitude": "6.15674663",
-        "longitude": "1.2526435",
-        "map_link": "https://maps.google.com/?q=6.15674663,1.2526435",
-        "adresse": "52, Boulevard, de l’Oti, Bè-kpota, BP 8223"
-    },
-    {
-        "nom": "PHARMACIE KPEHENOU",
-        "quartier": "LOME",
-        "contacts": "22 21 32 24 / 22 35 25 03",
-        "latitude": "6.1384656",
-        "longitude": "1.2348407",
-        "map_link": "https://maps.google.com/?q=6.1384656,1.2348407",
-        "adresse": "Boulevard Felix Houphouët Boigny, BP 12470"
-    },
-    {
-        "nom": "PHARMACIE 2000",
-        "quartier": "LOME",
-        "contacts": "22 70 48 25 / 22 70 01 69",
-        "latitude": "6.1638256",
-        "longitude": "1.2685838",
-        "map_link": "https://maps.google.com/?q=6.1638256,1.2685838",
-        "adresse": "Bè kpota, BP 61194"
-    },
-    {
-        "nom": "PHARMACIE DES OLIVIERS",
-        "quartier": "LOME",
-        "contacts": "22 27 01 34",
-        "latitude": "6.152032",
-        "longitude": "1.2600352",
-        "map_link": "https://maps.google.com/?q=6.152032,1.2600352",
-        "adresse": "266 boulevard Félix Boigny, Akodésséwa, BP 8480"
-    },
-    {
-        "nom": "PHARMACIE DU CHATEAU D’EAU",
-        "quartier": "LOME",
-        "contacts": "22 21 57 51",
-        "latitude": "6.1371315",
-        "longitude": "1.2468195",
-        "map_link": "https://maps.google.com/?q=6.1371315,1.2468195",
-        "adresse": "Avenue augustino de souza, bè château, BP 60141"
-    },
-    {
-        "nom": "PHARMACIE JEANNE D'ARC",
-        "quartier": "ANEHO",
-        "contacts": "22 22 08 01",
-        "latitude": "6.1273136",
-        "longitude": "1.2336277",
-        "map_link": "https://maps.google.com/?q=6.1273136,1.2336277",
-        "adresse": "Sur l’ancienne route d’Aného, BP 368"
-    },
-    {
-        "nom": "PHARMACIE CHRIST ROI",
-        "quartier": "LOME",
-        "contacts": "22 27 46 66",
-        "latitude": "6.169822",
-        "longitude": "1.2984214",
-        "map_link": "https://maps.google.com/?q=6.169822,1.2984214",
-        "adresse": "Raffinerie vers le petit marché, kagomé, BP 1409"
-    },
-    {
-        "nom": "PHARMACIE BAGUIDA",
-        "quartier": "LOME",
-        "contacts": "22 35 47 77",
-        "latitude": "6.1700753",
-        "longitude": "1.3237638",
-        "map_link": "https://maps.google.com/?q=6.1700753,1.3237638",
-        "adresse": "Rte baguida-dévégo, BP 60767"
-    },
-    {
-        "nom": "PHARMACIE AVEPOZO",
-        "quartier": "LOME",
-        "contacts": "22 27 04 86",
-        "latitude": "6.1698577",
-        "longitude": "1.343146",
-        "map_link": "https://maps.google.com/?q=6.1698577,1.343146",
-        "adresse": "A 600m restaurant Alice,  Bè-kome, avépozo, 04 BP  353 Lomé 04"
-    },
-    {
-        "nom": "PHARMACIE BIEN ETRE",
-        "quartier": "LOME",
-        "contacts": "22 26 45 16",
-        "latitude": "6.2855948",
-        "longitude": "1.5776124",
-        "map_link": "https://maps.google.com/?q=6.2855948,1.5776124",
-        "adresse": "Boulevard du haho, hédzranawoé, BP 2933"
-    },
-    {
-        "nom": "PHARMACIE SAINTE MARIE",
-        "quartier": "LOME",
-        "contacts": "22 21 85 58",
+        "nom": "PHARMACIE SAINT PIO",
+        "quartier": "KLOBATEME",
+        "contacts": "93404040 / 96868686",
         "latitude": "0.0",
         "longitude": "0.0",
         "map_link": "",
-        "adresse": "Avenue de la libération, Limusco, Tokoin Ramco, BP 297"
+        "adresse": "Klobatèmé, non loin du CMS Klobatèmé à côté du Complexe Scolaire Bon Samaritain"
+    },
+    {
+        "nom": "PHARMACIE WASTINE",
+        "quartier": "Lomé",
+        "contacts": "92611700 / 22518119",
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "map_link": "",
+        "adresse": "Adidogomé Logoté, à 400m du carrefour Logoté sur la route menant au quartier Lankouvi"
     }
 ]
