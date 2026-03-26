@@ -17,6 +17,8 @@ def find_hospitals(user_lat: float, user_lon: float, service_requis: str, is_spe
     """
     Cherche les 5 hôpitaux les plus proches avec lits disponibles, sans limite de distance.
     """
+
+    print("[INFO] : Connexion a db")
     conn = get_db_connection()
     cursor = conn.cursor()
 
@@ -38,14 +40,18 @@ def find_hospitals(user_lat: float, user_lon: float, service_requis: str, is_spe
         ORDER BY distance_reelle ASC 
         LIMIT 5;
     """
-
+    print("[INFO] : Recherche des mots cle")
     def executer_recherche(mot_cle):
         # On passe systématiquement les 4 paramètres requis par la requête ci-dessus
         cursor.execute(query, (user_lat, user_lon, user_lat, f"%{mot_cle}%"))
         return cursor.fetchall()
 
+    print("[INFO] : Fin de la recherche")
+
     try:
         # 3. On tente d'abord de chercher le service demandé
+
+        print("[INFO] : Recherche du service")
         resultats_recherche = executer_recherche(service_requis)
         
         # 4. GESTION DU REPLI
@@ -63,7 +69,7 @@ def find_hospitals(user_lat: float, user_lon: float, service_requis: str, is_spe
 
         # 5. Boucle d'affichage
         resultats_json = []
-        
+        print("[INFO] : Sauvegarde dans le JSON file")
         for row in resultats_finaux:
             resultats_json.append({
                 "name": row[0],

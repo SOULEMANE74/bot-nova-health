@@ -40,7 +40,7 @@ async def accueil():
 
 # Ce que le frontend doit t'envoyer
 class ChatRequest(BaseModel):
-    user_message: str
+    user_message: Any
     user_lat: float
     user_lon: float
 
@@ -74,7 +74,7 @@ async def chat_endpoint(request: ChatRequest):
         return ChatResponse(
             intention=result.get("intention", "INCONNU"),
             mot_cle=result.get("mot_cle", ""),
-            reponse_texte=result.get("final_response", "Désolé, une erreur est survenue lors de la recherche.")
+            reponse_texte=result.get("reponse_texte", "Désolé, une erreur est survenue lors de la recherche.")
         )
         
     except Exception as e:
@@ -113,7 +113,7 @@ async def audio_endpoint(
         return ChatResponse(
             intention=result.get("intention", "INCONNU"),
             mot_cle=result.get("mot_cle", ""),
-            reponse_texte=result.get("final_response", "Désolé, une erreur est survenue lors de la recherche.")
+            reponse_texte=result.get("reponse_texte", "Désolé, une erreur est survenue lors de la recherche.")
         )
 
     except Exception as e:

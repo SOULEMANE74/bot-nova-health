@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field
 
 from tools.pharma_tools import get_nearly
 from tools.hospitals_tools import find_hospitals
+from tools.prompts import SYSTEM_PROMPT_RESPONSE
 
 load_dotenv()
 
@@ -41,7 +42,7 @@ class GraphState(TypedDict):
     user_lon: float
     intention: str
     mot_cle: str
-    final_response: str
+    reponse_texte: list
 
 # 2. Définition du format de sortie 
 class RouterOutput(BaseModel):
@@ -73,6 +74,7 @@ def analyze_intent(state: GraphState):
     - "ophtalmo" -> "ophtalmologie"
     - "chirurgien" -> "chirurgie"
     - "gynéco" ou "accoucher" -> "maternité"
+    Si le message est une salutation (ex: "Salut", "Bonjour", "Comment ça va ?") ou n'a aucun rapport avec la santé, classe l'intention STRICTEMENT en "INCONNU".
     
     Message : {state["user_message"]}"""
     
@@ -89,7 +91,25 @@ def route_to_pharmacy(state: GraphState):
         "user_lon": state["user_lon"]
     })
     
-    return {"final_response": response}
+    return {"reponse_texte": response}
+
+def handle_greeting(state: GraphState):
+    """Gère les salutations et la politesse de l'assistant."""
+    user_msg = state.get("user_message", "")
+    
+    prompt = f"L'utilisateur a dit : '{user_msg}'. Réponds très poliment en une ou deux phrases maximum. Dis-lui que tu es l'assistant médical de Togo-SafeFlow et demande-lui comment tu peux l'aider pour sa santé aujourd'hui."
+    
+    try:
+        
+        response = llm.invoke([
+            SystemMessage(content="Tu es un assistant médical très poli, accueillant et bienveillant pour NOVA HEALTH."),
+            HumanMessage(content=prompt)
+        ])
+        message_accueil = response.content.strip()
+    except Exception as e:
+        message_accueil = "Bonjour ! Je suis votre assistant médical NOVA HEALTH. Comment puis-je vous aider aujourd'hui ?"
+
+    return {"reponse_texte": [{"message": message_accueil}]}
 
 def route_to_orientation(state: GraphState):
     """Gère l'orientation (rayon 20km)."""
@@ -99,7 +119,7 @@ def route_to_orientation(state: GraphState):
         "service_requis": state["mot_cle"], 
         "is_specialist": False
     })
-    return {"final_response": response}
+    return {"reponse_texte": response}
 
 def route_to_specialist(state: GraphState):
     """Gère la recherche de spécialiste."""
@@ -109,7 +129,39 @@ def route_to_specialist(state: GraphState):
         "service_requis": state["mot_cle"], 
         "is_specialist": True
     })
-    return {"final_response": response}
+    return {"reponse_texte": response}
+
+def generate_final_response(state):
+    # On récupère les données brutes
+    raw_data = state.get("reponse_texte", [])
+    user_msg = state.get("user_message", "")
+    
+    # SÉCURITÉ VITALE 
+    if not isinstance(raw_data, list) or len(raw_data) == 0:
+        return {"reponse_texte": raw_data}
+
+    # On prépare la question pour le LLM
+    prompt = f"L'utilisateur a dit : '{user_msg}'. Les résultats trouvés sont : {raw_data}. " \
+             f"Rédige le message d'introduction pour ces résultats."
+
+    # Appel au LLM (Groq)
+    try:
+        response = llm.invoke([
+            SystemMessage(content=SYSTEM_PROMPT_RESPONSE),
+            HumanMessage(content=prompt)
+        ])
+        generated_message = response.content.strip()
+    except Exception as e:
+        print(f"[WARNING] Erreur génération empathie : {e}")
+        generated_message = "Voici les meilleures options trouvées pour vous."
+
+    # On injecte ce message généré par l'IA dans chaque objet de la liste
+    for item in raw_data:
+        # On vérifie que item est bien un dictionnaire avant d'ajouter la clé
+        if isinstance(item, dict): 
+            item["message"] = generated_message
+
+    return {"reponse_texte": raw_data}
 
 # --- LA LOGIQUE DE ROUTAGE CONDITIONNEL (EDGES) ---
 
@@ -121,6 +173,8 @@ def decide_next_node(state: GraphState):
         return "specialist_node"
     elif state["intention"] == "ORIENTATION":
         return "orientation_node"
+    elif state["intention"] == "INCONNU":
+        return "greeting_node"
     else:
         return END 
 
@@ -128,16 +182,18 @@ def decide_next_node(state: GraphState):
 
 workflow = StateGraph(GraphState)
 
-# Ajout des nœuds
+# 1. Ajout de TOUS les nœuds (y compris l'empathie)
 workflow.add_node("router_node", analyze_intent)
 workflow.add_node("pharmacy_node", route_to_pharmacy)
 workflow.add_node("orientation_node", route_to_orientation)
 workflow.add_node("specialist_node", route_to_specialist)
+workflow.add_node("empathy_node", generate_final_response)
+workflow.add_node("greeting_node", handle_greeting)
 
-# Le point d'entrée est toujours le routeur
+# Le point d'entrée
 workflow.set_entry_point("router_node")
 
-# Ajout des conditions (Depuis le routeur, vers où aller ?)
+# Le routage conditionnel (Reste intact)
 workflow.add_conditional_edges(
     "router_node",
     decide_next_node,
@@ -145,14 +201,19 @@ workflow.add_conditional_edges(
         "pharmacy_node": "pharmacy_node",
         "specialist_node": "specialist_node",
         "orientation_node": "orientation_node",
+        "greeting_node": "greeting_node",
         END: END
     }
 )
 
-# Tous les nœuds d'action mènent à la fin
-workflow.add_edge("pharmacy_node", END)
-workflow.add_edge("orientation_node", END)
-workflow.add_edge("specialist_node", END)
+# 2. TOUS les outils convergent vers le nœud d'empathie au lieu de END
+workflow.add_edge("pharmacy_node", "empathy_node")
+workflow.add_edge("orientation_node", "empathy_node")
+workflow.add_edge("specialist_node", "empathy_node")
+
+# 3. Le nœud d'empathie clôture le graphe
+workflow.add_edge("greeting_node", END)
+workflow.add_edge("empathy_node", END)
 
 # Compilation du graphe
 app = workflow.compile()
