@@ -67,3 +67,6 @@
 {"timestamp": "2026-03-26T16:58:40.219062", "messages": [{"role": "user", "content": "Salut comment tu va"}, {"role": "assistant", "content": "{\"categorie\": \"INCONNU\", \"mot_cle\": \"\"}"}]}
 {"timestamp": "2026-03-26T17:13:00.822873", "messages": [{"role": "user", "content": "Salut comment tu va"}, {"role": "assistant", "content": "{\"categorie\": \"INCONNU\", \"mot_cle\": \"\"}"}]}
 {"timestamp": "2026-03-26T17:13:38.775340", "messages": [{"role": "user", "content": "Euh"}, {"role": "assistant", "content": "{\"categorie\": \"INCONNU\", \"mot_cle\": \"\"}"}]}
+{"timestamp": "2026-03-26T19:57:14.107823", "messages": [{"role": "user", "content": "Bonsoir comment tu vas"}, {"role": "assistant", "content": "{\"categorie\": \"INCONNU\", \"mot_cle\": \"\"}"}]}
+{"timestamp": "2026-03-26T19:57:35.597125", "messages": [{"role": "user", "content": "Qui est macron"}, {"role": "assistant", "content": "{\"categorie\": \"INCONNU\", \"mot_cle\": \"\"}"}]}
+{"timestamp": "2026-03-26T19:57:57.973147", "messages": [{"role": "user", "content": "Donne moi le numero des urgences"}, {"role": "assistant", "content": "{\"categorie\": \"ORIENTATION\", \"mot_cle\": \"\"}"}]}

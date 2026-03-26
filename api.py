@@ -48,6 +48,7 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     intention: str
     mot_cle: str
+    message:str
     reponse_texte: Any
 
 # --- LA ROUTE DE L'API ---
@@ -74,6 +75,7 @@ async def chat_endpoint(request: ChatRequest):
         return ChatResponse(
             intention=result.get("intention", "INCONNU"),
             mot_cle=result.get("mot_cle", ""),
+            message=result.get("message", ""),
             reponse_texte=result.get("reponse_texte", "Désolé, une erreur est survenue lors de la recherche.")
         )
         
@@ -113,6 +115,7 @@ async def audio_endpoint(
         return ChatResponse(
             intention=result.get("intention", "INCONNU"),
             mot_cle=result.get("mot_cle", ""),
+            message=result.get("message", ""),
             reponse_texte=result.get("reponse_texte", "Désolé, une erreur est survenue lors de la recherche.")
         )
 

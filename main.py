@@ -42,6 +42,7 @@ class GraphState(TypedDict):
     user_lon: float
     intention: str
     mot_cle: str
+    message: str
     reponse_texte: list
 
 # 2. Définition du format de sortie 
@@ -94,22 +95,36 @@ def route_to_pharmacy(state: GraphState):
     return {"reponse_texte": response}
 
 def handle_greeting(state: GraphState):
-    """Gère les salutations et la politesse de l'assistant."""
+    """Gère les salutations et BLOQUE strictement le hors-sujet."""
     user_msg = state.get("user_message", "")
     
-    prompt = f"L'utilisateur a dit : '{user_msg}'. Réponds très poliment en une ou deux phrases maximum. Dis-lui que tu es l'assistant médical de NOVA HEALTH et demande-lui comment tu peux l'aider pour sa santé aujourd'hui."
+    # LE PROMPT
+    prompt_systeme = """Tu es l'assistant médical strict de NOVA HEALTH (Togo-SafeFlow).
+    Ton SEUL ET UNIQUE rôle est d'orienter les patients vers des structures de santé ou des pharmacies.
+    
+    RÈGLES INVIOLABLES :
+    1. Si le message est une simple salutation (Bonjour, Salut...), sois poli et demande comment tu peux aider pour leur santé.
+    2. Si le message pose une question hors du domaine médical (politique, sport, mathématiques, célébrités, histoire, etc.), TU DOIS CATÉGORIQUEMENT REFUSER DE RÉPONDRE.
+    3. Ne donne JAMAIS la réponse à une question hors-sujet, même si tu la connais.
+    4. Formule ton refus avec courtoisie en rappelant ta fonction stricte. Exemple : "Je suis un assistant strictement médical pour Nova Health, je ne peux pas répondre à cette question. Comment puis-je vous aider pour votre santé ?"
+    """
     
     try:
-        
+        # On envoie les consignes strictes au LLM
         response = llm.invoke([
-            SystemMessage(content="Tu es un assistant médical très poli, accueillant et bienveillant pour NOVA HEALTH."),
-            HumanMessage(content=prompt)
+            SystemMessage(content=prompt_systeme),
+            HumanMessage(content=f"L'utilisateur dit : '{user_msg}'. Applique tes consignes strictes.")
         ])
         message_accueil = response.content.strip()
     except Exception as e:
-        message_accueil = "Bonjour ! Je suis votre assistant médical NOVA HEALTH. Comment puis-je vous aider aujourd'hui ?"
+        message_accueil = "Bonjour. Je suis l'assistant médical Nova Health. Je suis programmé uniquement pour les questions de santé. Que puis-je faire pour vous ?"
 
-    return {"reponse_texte": [{"message": message_accueil}]}
+
+    return {
+        "message":message_accueil,
+        "reponse_texte": []
+        }
+
 
 def route_to_orientation(state: GraphState):
     """Gère l'orientation (rayon 20km)."""
@@ -161,7 +176,9 @@ def generate_final_response(state):
         if isinstance(item, dict): 
             item["message"] = generated_message
 
-    return {"reponse_texte": raw_data}
+    return {
+        "message":generated_message,
+        "reponse_texte": raw_data}
 
 # --- LA LOGIQUE DE ROUTAGE CONDITIONNEL (EDGES) ---
 
