@@ -156,25 +156,3 @@ workflow.add_edge("specialist_node", END)
 
 # Compilation du graphe
 app = workflow.compile()
-
-# --- TEST DU SYSTÈME ---
-if __name__ == "__main__":
-    test_lat = 6.1725
-    test_lon = 1.2138
-    
-    message_test = "j'ai tres mal au pieds "
-    
-    print(f"Message utilisateur : {message_test}")
-    
-    inputs = {
-        "user_message": message_test,
-        "user_lat": test_lat,
-        "user_lon": test_lon
-    }
-    
-    result = app.invoke(inputs)
-    
-    print("\n--- RÉSULTAT DU ROUTAGE ---")
-    print(f"Intention détectée : {result.get('intention')}")
-    print(f"Mot clé extrait : {result.get('mot_cle')}")
-    print(f"Réponse finale :\n{result.get('final_response')}")

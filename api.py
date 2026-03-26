@@ -123,9 +123,3 @@ async def audio_endpoint(
     finally:
         if os.path.exists(temp_file_path):
             os.remove(temp_file_path)
-
-
-# --- LANCEMENT DU SERVEUR ---
-if __name__ == "__main__":
-    print("[INFO] Démarrage de l'API Nova Health sur http://localhost:8000")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
