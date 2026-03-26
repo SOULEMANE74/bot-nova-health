@@ -97,7 +97,7 @@ def handle_greeting(state: GraphState):
     """Gère les salutations et la politesse de l'assistant."""
     user_msg = state.get("user_message", "")
     
-    prompt = f"L'utilisateur a dit : '{user_msg}'. Réponds très poliment en une ou deux phrases maximum. Dis-lui que tu es l'assistant médical de Togo-SafeFlow et demande-lui comment tu peux l'aider pour sa santé aujourd'hui."
+    prompt = f"L'utilisateur a dit : '{user_msg}'. Réponds très poliment en une ou deux phrases maximum. Dis-lui que tu es l'assistant médical de NOVA HEALTH et demande-lui comment tu peux l'aider pour sa santé aujourd'hui."
     
     try:
         
